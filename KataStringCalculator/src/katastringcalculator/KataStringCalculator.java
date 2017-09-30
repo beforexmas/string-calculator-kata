@@ -16,7 +16,7 @@ public class KataStringCalculator {
      */
     public static void main(String[] args) {
         StringCalculator S = new StringCalculator();
-        System.out.println(S.add(""));
+        System.out.println(S.add("1,1,2,3,5,8,13,21,34,55, 89 ,144"));
     }
     
 }
