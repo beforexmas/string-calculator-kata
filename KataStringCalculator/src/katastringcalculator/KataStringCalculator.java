@@ -15,7 +15,8 @@ public class KataStringCalculator {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        StringCalculator S = new StringCalculator();
+        System.out.println(S.add(""));
     }
     
 }
