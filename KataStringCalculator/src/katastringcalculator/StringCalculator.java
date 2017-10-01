@@ -19,7 +19,7 @@ class StringCalculator {
     
     private ArrayList<String> locDelimiters = new ArrayList<>();
 
-    int add(String numbers) {
+    int add(String numbers) throws Exception {
         locNumbers = numbers;
         
         loadDefaultDelimeters();
@@ -103,18 +103,6 @@ class StringCalculator {
         }
     }
 
-    // Sum all values
-    int sum(ArrayList<Integer> values) {
-        if (values != null && values.size() > 0) {
-            int res = 0;
-            for (int x : values) {
-                res += x;
-            }
-            return res;
-        }
-        return 0;
-    }
-
     // Check if string is a number
     boolean isNumeric(String s) {
         try {
@@ -163,6 +151,21 @@ class StringCalculator {
             }
         }
         return false;
+    }
+
+    // Sum all values
+    int sum(ArrayList<Integer> values) throws Exception {
+        if (values != null && values.size() > 0) {
+            int res = 0;
+            for (int x : values) {
+                if(x < 0) {
+                    throw new Exception("negatives not allowed: " + x, null); 
+                }
+                res += x;
+            }
+            return res;
+        }
+        return 0;
     }
     
 }
