@@ -16,7 +16,7 @@ public class KataStringCalculator {
      */
     public static void main(String[] args) throws Exception {
         StringCalculator S = new StringCalculator();
-        System.out.println(S.add(",4,1\n5//o3o3\n4"));
+        System.out.println(S.add(",4,1\n1001//o3o3\n4"));
     }
     
 }

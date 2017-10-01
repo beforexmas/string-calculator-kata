@@ -161,7 +161,9 @@ class StringCalculator {
                 if(x < 0) {
                     throw new Exception("negatives not allowed: " + x, null); 
                 }
-                res += x;
+                if(x < 1001) {
+                    res += x;
+                }
             }
             return res;
         }
