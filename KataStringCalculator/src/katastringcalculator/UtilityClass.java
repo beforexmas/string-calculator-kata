@@ -10,11 +10,10 @@ package katastringcalculator;
  * @author keres
  */
 
-// Provide error check and utiliy functions
 class UtilityClass {
     protected String locError   = "";
     
-
+    // Provide error check 
     protected void checkErrorDetected() {
         if (locError.length() > 0) {
             System.out.println("Error detected: " + locError);
@@ -30,6 +29,5 @@ class UtilityClass {
         }
         return true;
     }
-
     
 }

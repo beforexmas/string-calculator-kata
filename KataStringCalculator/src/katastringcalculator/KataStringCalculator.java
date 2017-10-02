@@ -13,7 +13,6 @@ public class KataStringCalculator {
     
     public static void main(String[] args) throws Exception {
         StringCalculator S = new StringCalculator();
-        System.out.println(S.add("//x\n3x2//y\n4y2")); //x\n3x3//=\n4=3
+        System.out.println(S.add("//x\n3x2//y\n4y2\n3,4,3\n3//;\n4;4,3")); 
     }
-    
 }

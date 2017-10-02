@@ -12,7 +12,6 @@ import java.util.ArrayList;
  * @author keres
  */
 
-// Convert the string into valid numbers
 class NumbersParser {    
 
     private StringCalculator sc = null;
@@ -61,6 +60,7 @@ class NumbersParser {
         }
     }
     
+    // Convert the string into valid numbers
     protected ArrayList<Integer> parse(String str, ArrayList<String> locDelimiters) {
         
         ArrayList<Integer> Tmp = new ArrayList();
