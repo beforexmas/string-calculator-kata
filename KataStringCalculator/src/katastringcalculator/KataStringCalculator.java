@@ -10,13 +10,10 @@ package katastringcalculator;
  * @author keres
  */
 public class KataStringCalculator {
-
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) throws Exception {
         StringCalculator S = new StringCalculator();
-        System.out.println(S.add(",4,1\n1001//o3o3\n4"));
+        System.out.println(S.add("//x\n3x2//y\n4y2")); //x\n3x3//=\n4=3
     }
     
 }
